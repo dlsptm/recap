@@ -248,4 +248,133 @@ let fruitFound = fruits.find(fruit => fruit.startsWith('b'));
 console.log(fruitFound); // 'blueberry'
 
 
+// ******************************** LES CONDITIONS ********************************
+
+// Exemple 1 : Utilisation d'un if simple
+
+let age = 20;
+
+if (age >= 18) {
+    console.log("Tu es majeur.");
+} else {
+    console.log("Tu es mineur.");
+}
+
+// Exemple 2 : Utilisation de else if pour tester plusieurs conditions
+
+let heure = 14;
+
+if (heure < 12) {
+    console.log("Bonjour !");
+} else if (heure < 18) {
+    console.log("Bon après-midi !");
+} else {
+    console.log("Bonsoir !");
+}
+
+// Exemple 3 : Opérateurs de comparaison
+
+let a = 10;
+let b = 5;
+
+if (a > b) {
+    console.log("a est plus grand que b");
+}
+
+if (a === 10) {
+    console.log("a est exactement égal à 10");
+}
+
+if (a !== b) {
+    console.log("a et b ne sont pas égaux");
+}
+
+// Exemple 4 : Combinaison de conditions avec les opérateurs logiques (&&, ||)
+
+let age = 25;
+let hasTicket = true;
+
+if (age >= 18 && hasTicket) {
+    console.log("Tu peux entrer dans l'événement.");
+} else {
+    console.log("Tu ne peux pas entrer.");
+}
+
+let isWeekend = true;
+let isHoliday = false;
+
+if (isWeekend || isHoliday) {
+    console.log("Tu peux te reposer aujourd'hui.");
+} else {
+    console.log("C'est un jour de travail.");
+}
+
+// Exemple 5 : Utilisation de l'opérateur NOT "!"
+
+let isRaining = false;
+
+if (!isRaining) {
+    console.log("Il fait beau, allons dehors !");
+} else {
+    console.log("Il pleut, restons à l'intérieur.");
+}
+
+// Exemple 6 : Test avec plusieurs conditions et else if
+let temperature = 30;
+
+if (temperature < 10) {
+    console.log("Il fait froid, prends une veste !");
+} else if (temperature >= 10 && temperature < 20) {
+    console.log("Il fait frais, une veste légère suffira.");
+} else if (temperature >= 20 && temperature < 30) {
+    console.log("Il fait agréable, profite de la journée !");
+} else {
+    console.log("Il fait chaud, bois beaucoup d'eau !");
+}
+
+// Exemple 8 : Utilisation d'un switch (alternative au if-else)
+
+let fruit = "pomme";
+
+switch (fruit) {
+    case "pomme":
+        console.log("C'est une pomme !");
+        break;
+    case "banane":
+        console.log("C'est une banane !");
+        break;
+    case "orange":
+        console.log("C'est une orange !");
+        break;
+    default:
+        console.log("Fruit inconnu.");
+}
+
+// Exemple 9 : Vérification de l'égalité de type avec ===
+
+let x = "10";
+let y = 10;
+
+if (x === y) {
+    console.log("x et y sont égaux en valeur et en type.");
+} else {
+    console.log("x et y ne sont pas égaux en type ou en valeur.");
+}
+
+// Exemple 10 : Boucle while (s'exécute tant que la condition est vraie)
+
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++; // Incrémenter i pour éviter une boucle infinie
+}
+
+// Exemple 11 : Boucle do-while (le code est exécuté au moins une fois)
+
+let j = 1;
+do {
+    console.log(j);
+    j++;
+} while (j <= 5);
+
 
